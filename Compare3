@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+        int a,b,c,g,g2,s;
+        printf("Enter three numbers\n");
+        scanf("%d %d %d",&a,&b,&c);
+        if(a>b&&a>c)
+        {
+                g=a;
+        }
+        if(b>a&&b>c)
+        {
+                g=b;
+        }
+        if(c>a&&c>b)
+        {
+                g=c;
+        }
+        printf("%d is the greatest number\n",g);
+        if(g==a)
+        {
+                g2=(b>c)?b:c;
+        }
+        if(g==b)
+        {
+                g2=(a>c)?a:c;
+        }
+        if(g==c)
+        {
+                g2=(a>b)?a:b;
+        }
+        printf("%d is second greatest number\n",g2);
+        s=(a<b)?a:b;
+        s=(s<c)?s:c;
+        s=(s<a)?s:a;
+        printf("%d is smallest number\n",s);
+}
